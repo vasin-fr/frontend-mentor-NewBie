@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+body {
+  color: hsl(0, 0%, 100%);
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(217, 54%, 11%);
+}
+
+p {
+  font-weight: 300;
+  color: hsl(215, 51%, 70%);
+  opacity: 0.7;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .block {
+  padding-top: 7.5px;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 1rem;
+  box-shadow: rgba(14, 24, 39, 0.73) 0px 0px 0px, rgba(14, 24, 39, 0.73) -20px 30px 5px, rgba(14, 24, 39, 0.73) 20px 30px 5px;
+}
+main .block h2 {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+main .block .block-inner {
+  width: 300px;
+  padding: 1.3rem 1.5rem;
+}
+main .block .block-inner .photo img {
+  border-radius: 10px;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+main .block .block-inner .price {
+  padding-top: 6.5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 1.6rem;
+}
+main .block .block-inner .price div {
+  display: flex;
+}
+main .block .block-inner .price div img {
+  padding-right: 6.5px;
+  height: 18px;
+  width: 11px;
+}
+main .block .block-inner .price div span {
+  font-size: 1rem;
+  color: hsl(215, 51%, 70%);
+}
+main .block .block-inner .price div #clock {
+  height: 19px;
+  width: 19px;
+  transform: scale(0.9);
+}
+main .block .block-inner .price div #blue {
+  color: hsl(178, 100%, 50%);
+  font-weight: 700;
+  opacity: 0.85;
+}
+main .block .block-inner .dev {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  border-top: 1px hsl(215, 32%, 27%) solid;
+  padding-top: 0.4rem;
+}
+main .block .block-inner .dev div {
+  padding-right: 1rem;
+}
+main .block .block-inner .dev div img {
+  height: 30px;
+  width: 30px;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+}
+main .block .block-inner .dev p span {
+  color: hsl(0, 0%, 100%);
+}/*# sourceMappingURL=index.css.map */

@@ -85,4 +85,10 @@ main .block .block-inner .dev div img {
 }
 main .block .block-inner .dev p span {
   color: hsl(0, 0%, 100%);
+}
+
+@media screen and (max-width: 400px) {
+  main .block {
+    transform: scale(0.6);
+  }
 }/*# sourceMappingURL=index.css.map */

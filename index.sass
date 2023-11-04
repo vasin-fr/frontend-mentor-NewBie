@@ -2,6 +2,7 @@
     
 $cyan: hsl(215, 51%, 70%)
 $soft-blue: hsl(178, 100%, 50%)
+$soft-blue-photo: rgba(2, 237, 233, 0.70)
 $white: hsl(0, 0%, 100%)
 $dark-blue: hsl(217, 54%, 11%)
 $dark-blue2: hsl(216, 50%, 16%)
@@ -13,6 +14,7 @@ body
     font-size: 18px
     font-family: 'Outfit', sans-serif
     background-color: $dark-blue
+    margin: 0
 p
     font-weight: 300
     color: $cyan
@@ -31,15 +33,27 @@ main
         h2
             font-size: 1.4rem
             font-weight: 500
+            &:hover
+                color: $soft-blue
+                cursor: pointer
+                transition: 0.2s all
         .block-inner
             width: 300px
             padding: 1.3rem 1.5rem
             .photo
+                background: url('./images/icon-view.svg') no-repeat center center
+                background-color: $soft-blue-photo
+                border-radius: 11px
                 img
+                    transition: 0.2s all
                     border-radius: 10px
                     display: block
                     width: 100%
                     height: 100%
+                    &:hover
+                        opacity: 0.3
+                        transition: 0.2s all
+                        cursor: pointer
             .price
                 padding-top: 6.5px
                 display: flex
@@ -77,8 +91,14 @@ main
                         border: 1px solid $white
                         border-radius: 50%
                 p
-                    span
-                        color: $white
+                    padding-right: 5.5px
+                span
+                    font-weight: 300
+                    color: $white
+                    &:hover
+                        color: $soft-blue
+                        cursor: pointer
+                        transition: 0.2s all
 
 
 @media screen and (max-width: 400px)

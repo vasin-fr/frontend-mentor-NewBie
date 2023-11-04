@@ -4,6 +4,7 @@ body {
   font-size: 18px;
   font-family: "Outfit", sans-serif;
   background-color: hsl(217, 54%, 11%);
+  margin: 0;
 }
 
 p {
@@ -28,15 +29,31 @@ main .block h2 {
   font-size: 1.4rem;
   font-weight: 500;
 }
+main .block h2:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+  transition: 0.2s all;
+}
 main .block .block-inner {
   width: 300px;
   padding: 1.3rem 1.5rem;
 }
+main .block .block-inner .photo {
+  background: url("./images/icon-view.svg") no-repeat center center;
+  background-color: rgba(2, 237, 233, 0.7);
+  border-radius: 11px;
+}
 main .block .block-inner .photo img {
+  transition: 0.2s all;
   border-radius: 10px;
   display: block;
   width: 100%;
   height: 100%;
+}
+main .block .block-inner .photo img:hover {
+  opacity: 0.3;
+  transition: 0.2s all;
+  cursor: pointer;
 }
 main .block .block-inner .price {
   padding-top: 6.5px;
@@ -83,8 +100,17 @@ main .block .block-inner .dev div img {
   border: 1px solid hsl(0, 0%, 100%);
   border-radius: 50%;
 }
-main .block .block-inner .dev p span {
+main .block .block-inner .dev p {
+  padding-right: 5.5px;
+}
+main .block .block-inner .dev span {
+  font-weight: 300;
   color: hsl(0, 0%, 100%);
+}
+main .block .block-inner .dev span:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+  transition: 0.2s all;
 }
 
 @media screen and (max-width: 400px) {
